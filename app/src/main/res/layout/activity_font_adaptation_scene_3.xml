@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!--正常TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Hello"
+        android:textSize="50sp"/>
+
+    <!--加了includeFontPadding属性的TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorPrimary"
+        android:includeFontPadding="false"
+        android:text="Hello"
+        android:textSize="50sp"/>
+
+    <!--自定义view-->
+    <com.wildma.fontadaptation.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Hello"
+        android:textSize="50sp"
+        app:removeDefaultPadding="true"/>
+
+</LinearLayout>

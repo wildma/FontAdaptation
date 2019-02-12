@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--普通TextView-->
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_bg_008577"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="这是标题，该标题的名字比较长，产品要求不换行全部显示出来"
+        android:textSize="18sp"/>
+
+    <!--可动态改变TextView字体大小-->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_text"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_008577"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="这是标题，该标题的名字比较长，产品要求不换行全部显示出来"
+        android:textSize="18sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"/>
+</LinearLayout>
