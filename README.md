@@ -11,6 +11,7 @@ Android 字体适配的各种场景
 
 ### 场景三
 去除TextView默认内边距。如下图所示，第一个为普通TextView，第二个为加了includeFontPadding属性的TextView，第三个为自定义TextView（符合需求）。
+
 ![](https://raw.githubusercontent.com/wildma/FontAdaptation/master/screenshots/img_3.jpg)
 
 详细介绍请看文章：[聊聊Android中的字体适配](https://www.jianshu.com/p/2fdc97ae74a8)
